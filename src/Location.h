@@ -11,7 +11,7 @@
 namespace ibm_001 {
 
 class Location {
-
+	friend class Human;
 private:
 	int currentPatch;
 	int homePatch;

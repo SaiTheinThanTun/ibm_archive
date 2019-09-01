@@ -67,6 +67,7 @@ int DebugInfection(){
 	cout << myInf.GetState() << endl;
 	Patch myPatch;
 	myInf.Progression(myPatch);
+	//myInf.Progression();
 	cout << myInf.GetState() << endl;
 	return 0;
 }
@@ -94,12 +95,12 @@ int main() {
 
 
 
-	//DebugPatch();
 	//cout << "DebugAge: " << DebugAge()<< endl;
 	//DebugLocation();
 	//DebugOccupation();
 	//DebugHuman();
 	//DebugInfection();
+	//DebugPatch();
 	return 0;
 }
 

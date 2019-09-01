@@ -7,7 +7,11 @@
 
 #ifndef HUMAN_H_
 #define HUMAN_H_
+#include "Age.h"
+#include "Location.h"
+#include "Occupation.h"
 #include "Infection.h"
+
 
 namespace ibm_001 {
 
@@ -15,9 +19,13 @@ enum Sex{F,M};
 
 class Human {
 
-	//friend class Infection;
+	friend class Occupation;
+	//friend class Age;
 private:
 	Sex sex;
+	Age age;
+	Location location;
+	Occupation occupation;
 	Infection infection;
 public:
 	Human();

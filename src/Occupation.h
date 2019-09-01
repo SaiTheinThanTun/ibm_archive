@@ -7,13 +7,16 @@
 
 #ifndef OCCUPATION_H_
 #define OCCUPATION_H_
+//#include "Human.h"
 
 namespace ibm_001 {
 enum OccupationTypes{No, Business, Farmer, Forest};
 
 class Occupation {
+	friend class Human;
 private:
 	OccupationTypes occuType;
+	//Human parent;
 public:
 	Occupation();
 	void SetOccuType(OccupationTypes occuType);

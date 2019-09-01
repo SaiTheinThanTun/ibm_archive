@@ -11,6 +11,8 @@
 namespace ibm_001 {
 
 class Age {
+	friend class Human;
+	friend class Occupation;
 private:
 	int ageInYears;
 public:

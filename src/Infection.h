@@ -14,7 +14,7 @@ namespace ibm_001 {
 enum States{S,I,R};
 
 class Infection {
-
+	friend class Human;
 	//friend class Patch;
 	//friend class Location;
 
@@ -26,6 +26,7 @@ public:
 	States GetState() const;
 	void InfectHuman();
 	void Progression(Patch patch); // get age, state, immunity level, etc through friends
+	//void Progression();
 };
 
 } /* namespace ibm_001 */

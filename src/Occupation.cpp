@@ -6,6 +6,8 @@
  */
 
 #include "Occupation.h"
+#include "Age.h"
+#include "Human.h"
 
 namespace ibm_001 {
 
@@ -21,7 +23,7 @@ OccupationTypes Occupation::GetOccuType() const{
 	return occuType;
 }
 void Occupation::ComingOfAgeNewOccupation(){
-	if(occuType==No){
+	if(Human::age.ageInYears>15 && occuType==No){
 		occuType= Business;
 	}
 }
